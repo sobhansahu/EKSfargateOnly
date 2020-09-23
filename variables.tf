@@ -20,7 +20,7 @@ variable "region" {
 
 variable "public_subnets" {
   type    = list
-  default = ["subnet-0c5a94f619eede19e", "subnet-0c5a94f619eede19e", "subnet-01f3297a608b3cbc0"]
+  default = ["10.0.4.0/24", "10.0.5.0/24", "10.0.6.0/24"]
   description = "List of private subnet IDs"
   
 }
@@ -28,5 +28,5 @@ variable "public_subnets" {
 variable "private_subnets" {
   description = "List of private subnet IDs"
   type    = list
-  default = ["subnet-0c5a94f619eede19e", "subnet-0c473f3281a3f7362", "subnet-04b00bcf2da9afdec"]
+  default = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
 }
