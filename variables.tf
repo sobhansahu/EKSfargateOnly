@@ -20,7 +20,7 @@ variable "region" {
 
 variable "public_subnets" {
   type    = list
-  default = ["training-vpc-public-us-east-2a", "training-vpc-public-us-east-2b", "training-vpc-public-us-east-2c"]
+  default = ["subnet-0c5a94f619eede19e", "subnet-0c5a94f619eede19e", "subnet-01f3297a608b3cbc0"]
   description = "List of private subnet IDs"
   
 }
@@ -28,5 +28,5 @@ variable "public_subnets" {
 variable "private_subnets" {
   description = "List of private subnet IDs"
   type    = list
-  default = ["training-vpc-public-us-east-2a", "training-vpc-public-us-east-2b", "training-vpc-public-us-east-2c"]
+  default = ["subnet-0c5a94f619eede19e", "subnet-0c473f3281a3f7362", "subnet-04b00bcf2da9afdec"]
 }
