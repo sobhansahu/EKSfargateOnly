@@ -10,17 +10,9 @@ variable "environment" {
   default = "infosyssubscription"
 }
 
-variable "region" {
-  description = "the AWS region in which resources are created, you must set the availability_zones variable as well if you define this value to something other than the default"
-}
 
-variable "k8s_version" {
-  description = "Kubernetes version."
-}
 
-variable "vpc_id" {
-  description = "The VPC the cluser should be created in"
-}
+
 
 variable "public_subnets" {
   type    = list
@@ -33,8 +25,4 @@ variable "private_subnets" {
   description = "List of private subnet IDs"
   type    = list
   default = ["training-vpc-public-us-east-2a", "training-vpc-public-us-east-2b", "training-vpc-public-us-east-2c"]
-}
-
-variable "kubeconfig_path" {
-  description = "Path where the config file for kubectl should be written to"
 }
