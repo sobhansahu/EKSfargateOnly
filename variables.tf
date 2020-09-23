@@ -10,7 +10,11 @@ variable "environment" {
   default = "infosyssubscription"
 }
 
-
+variable "region" {
+  
+  type = string
+  default = "us-east-1"
+}
 
 
 
